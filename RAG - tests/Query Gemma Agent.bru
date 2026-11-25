@@ -1,0 +1,21 @@
+meta {
+  name: Query Gemma Agent
+  type: http
+  seq: 0
+}
+
+post {
+  url: http://localhost:8000/query
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "question": "Qual é o assunto principal do documento e quais dados estão nas tabelas?"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

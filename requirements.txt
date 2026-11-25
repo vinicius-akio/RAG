@@ -1,0 +1,33 @@
+# Framework Web e Servidor ASGI
+fastapi
+uvicorn
+python-multipart
+
+# Validação e Integridade Estrutural de Arquivos
+pypdf
+python-docx
+openpyxl
+python-pptx
+beautifulsoup4
+lxml
+
+# Processamento e Advanced RAG (Docling)
+docling
+
+# Banco de Dados Vetorial Qdrant
+qdrant-client
+langchain-qdrant
+
+# Framework RAG, Orquestração e Agente Gemma 2
+langchain
+langchain-community
+langchain-core
+langchain-docling
+langchain-ollama
+openai
+
+# Variáveis de Ambiente e Configuração
+python-dotenv
+
+# Modelo de Embeddings
+sentence-transformers

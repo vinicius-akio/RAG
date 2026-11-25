@@ -1,0 +1,20 @@
+meta {
+  name: Uploaad Doc
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/upload
+  body: file
+  auth: none
+}
+
+body:file {
+  file: @file(c:\Users\yasta\Downloads\Advanced RAG.pdf) @contentType(application/pdf)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

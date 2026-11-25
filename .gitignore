@@ -1,0 +1,33 @@
+# Ambiente Virtual do Python
+.venv/
+venv/
+env/
+ENV/
+
+# Banco Vetorial Local (Qdrant) e ChromaDB anterior
+qdrant_db/
+chroma_db/
+
+# Arquivos de Compilação e Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Arquivos Temporários de Upload e Processamento
+*.tmp
+temp/
+tmp/
+
+# Variáveis de Ambiente e Segredos
+.env
+.env.local
+
+# Configurações do VS Code e IDEs (Opcional - remova se quiser commitar o .vscode)
+.vscode/*.log
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
