@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from langchain_core.documents import Document
 
+load_dotenv()
+
 client = OpenAI(
     base_url=os.getenv("OLLAMA_BASE_URL", "https://ollama.com/v1"),
     api_key=os.getenv("OLLAMA_API_KEY", "ollama_key_padrao"),
@@ -19,6 +21,8 @@ def gerar_resposta_gemma(query: str, context_docs: List[Document]) -> str:
     system_prompt = (
         "Você é um Agente de IA especialista em análise de documentos internos.\\n"
         "Responda à pergunta do usuário utilizando estritamente os trechos de contexto fornecidos abaixo.\\n\\n"
+        "Aproveite a hierarquia de títulos e a estrutura de tabelas presas ao contexto.\\n"
+        "Se a resposta não estiver clara no contexto, responda honestamente que não encontrou a informação.\\n\\n"
         f"Contexto Extraído dos Documentos:\n{context_text}"
     )
 
